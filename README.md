@@ -4,7 +4,7 @@ This gem is aimed at recording any unversioned gem installed into a manifest fil
 
 Logically it should be installed as early on as possible within your pipelines to analyse remaining gem install activity and is limited in it's dependencies to Ruby standard libraries and gem_pre_unversioned_install (which itself has been crafted to avoid additional dependencies).
 ## RUBYGEMS_UNVERSIONED_MANIFEST
-By default the unversioned gem list will be persisted to /tmm/unversioned_gems.yaml but it is possible to override the name using the environment variable RUBYGEMS_UNVERSIONED_MANIFEST. By results will be serialised in YAML form, however, if a .json extension is provided by setting this variable the results will be serialised in JSON form.
+By default the unversioned gem list will be persisted to /tmp/unversioned_gems.yaml but it is possible to override the name using the environment variable RUBYGEMS_UNVERSIONED_MANIFEST. By results will be serialised in YAML form, however, if a .json extension is provided by setting this variable the results will be serialised in JSON form.
 
 YAML example
 ```
